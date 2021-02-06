@@ -47,8 +47,6 @@ class TmdbService {
         
         let url = components.url?.absoluteString
         
-        print(url)
-        
         RxAlamofire
             .requestJSON(.get,
                                 url!,
@@ -66,7 +64,7 @@ class TmdbService {
             }
                 
         }, onError: {  (error) in
-            print("API Response \(url)\nError:\(error.localizedDescription)")
+            print("API Response \(String(describing: url))\nError:\(error.localizedDescription)")
             self.rxGetTvShowsCategoryResponse.onError(error)
         }, onDisposed: {
             print("Diposing API")

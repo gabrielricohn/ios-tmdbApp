@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
             
             let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let rootVC:UIViewController = mainStoryboard.instantiateViewController(withIdentifier:"SignInViewController") as! SignInViewController
+            let rootVC:UIViewController = mainStoryboard.instantiateViewController(withIdentifier:"SignInController") as! SignInController
             let navigationController = UINavigationController(rootViewController: rootVC)
             window.rootViewController = navigationController
             

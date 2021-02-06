@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SignInViewController: UIViewController {
+class SignInController: UIViewController {
     
     @IBOutlet weak var signInScrollView: UIScrollView!
     @IBOutlet weak var signInStackView: UIStackView!
@@ -17,6 +17,8 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
+    var signInPresenter: SignInPresenter!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupHideKeyboardOnTap()
@@ -24,12 +26,12 @@ class SignInViewController: UIViewController {
         userNameTextField.delegate = self
         passwordTextField.delegate = self
         
+        userNameTextField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
+        
         logInButton.backgroundColor = UIColor.systemGreen
         logInButton.tintColor = UIColor.white
         logInButton.layer.cornerRadius = 5
-        
-        userNameTextField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
-        passwordTextField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
         
         userNameTextField.attributedPlaceholder = NSAttributedString(string: "username",
                                                                      attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "tmdbText")!])
@@ -39,22 +41,24 @@ class SignInViewController: UIViewController {
         userNameTextField.textColor = UIColor.black
         passwordTextField.textColor = UIColor.black
         
+        loadingIndicator.color = UIColor.white
+        
         passwordTextField.isSecureTextEntry = true
         
         signInScrollView.isScrollEnabled = false
-        
-        loadingIndicator.color = UIColor.white
+    
         loadingIndicator.isHidden = true
         
-//        if userNameTextField.text!.isEmpty && passwordTextField.text!.isEmpty {
-            logInButton.isEnabled = false
-//        }
+        logInButton.isEnabled = false
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         registerNotifications()
+        
+        signInPresenter = SignInPresenter()
+        signInPresenter.attachView(view: self)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -95,40 +99,60 @@ class SignInViewController: UIViewController {
     }
     
     func resetScrollView() {
+        
         view.layoutIfNeeded()
         UIView.animate(withDuration: 0.1) {
             self.signInScrollView.setContentOffset(.zero, animated: false)
         }
+        
     }
     
     @objc func textFieldDidChange(textField: UITextField) {
+        
         logInButton.isEnabled = !(userNameTextField.text?.isEmpty ?? true) && !(passwordTextField.text?.isEmpty ?? true)
+        
     }
     
     @IBAction func logInAction(_ sender: Any) {
-        validateSignIn()
+        
+        validateSignIn(username: userNameTextField.text!, password: passwordTextField.text!)
+        
     }
     
 }
 
-extension SignInViewController: SignInView {
-    func validateSignIn() {
+extension SignInController: SignInView {
+    func navigateToHome() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewControllerWithIdentifier("NewsDetailsVCID") as NewsDetailsViewController
+//         vc.newsObj = newsObj
+//         navigationController?.pushViewController(vc,
+//         animated: true)
+    }
+    
+    func showLoadingIndicator() {
+        
         logInButton.isHidden = true
         loadingIndicator.isHidden = false
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
-            print("Funciona!")
-            
-            let tmdbService = TmdbService()
-            tmdbService.getTvShowsCategoryApi(tvCategory: .AiringToday)
-            
-            self.loadingIndicator.isHidden = true
-            self.logInButton.isHidden = false
-        })
     }
+    
+    func hideLoadingIndicator() {
+        
+        self.loadingIndicator.isHidden = true
+        self.logInButton.isHidden = false
+        
+    }
+    
+    func validateSignIn(username: String, password: String) {
+        
+        signInPresenter.checkLogInCredentials(username: username, password: password)
+        
+    }
+    
 }
 
-extension SignInViewController: UITextFieldDelegate {
+extension SignInController: UITextFieldDelegate {
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         switch textField {

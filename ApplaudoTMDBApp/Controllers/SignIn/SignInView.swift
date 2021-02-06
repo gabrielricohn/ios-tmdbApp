@@ -8,5 +8,8 @@
 import Foundation
 
 protocol SignInView {
-    func validateSignIn()
+    func validateSignIn(username: String, password: String)
+    func showLoadingIndicator()
+    func hideLoadingIndicator()
+    func navigateToHome()
 }
