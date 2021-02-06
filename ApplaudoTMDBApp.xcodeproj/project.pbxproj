@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22D19A4891E9FFD120AA6B65 /* Pods_ApplaudoTMDBApp_ApplaudoTMDBAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA7D43AFB718F12749209A1 /* Pods_ApplaudoTMDBApp_ApplaudoTMDBAppUITests.framework */; };
+		3886EE6025CCB85200E3A54A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EE5F25CCB85200E3A54A /* AppDelegate.swift */; };
+		3886EE6225CCB85200E3A54A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EE6125CCB85200E3A54A /* SceneDelegate.swift */; };
+		3886EE6425CCB85200E3A54A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EE6325CCB85200E3A54A /* ViewController.swift */; };
+		3886EE6725CCB85200E3A54A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3886EE6525CCB85200E3A54A /* Main.storyboard */; };
+		3886EE6925CCB85400E3A54A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3886EE6825CCB85400E3A54A /* Assets.xcassets */; };
+		3886EE6C25CCB85400E3A54A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3886EE6A25CCB85400E3A54A /* LaunchScreen.storyboard */; };
+		3886EE7725CCB85500E3A54A /* ApplaudoTMDBAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EE7625CCB85500E3A54A /* ApplaudoTMDBAppTests.swift */; };
+		3886EE8225CCB85500E3A54A /* ApplaudoTMDBAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EE8125CCB85500E3A54A /* ApplaudoTMDBAppUITests.swift */; };
+		3886EE9925CCBD3B00E3A54A /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EE9825CCBD3B00E3A54A /* BaseController.swift */; };
+		3886EEA125CCBD4600E3A54A /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EEA025CCBD4600E3A54A /* BasePresenter.swift */; };
+		3886EEA725CCBDD300E3A54A /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EEA625CCBDD300E3A54A /* SignInController.swift */; };
+		3886EEAC25CCBDE600E3A54A /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EEAB25CCBDE600E3A54A /* SignInPresenter.swift */; };
+		3886EEB125CCBDF300E3A54A /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EEB025CCBDF300E3A54A /* SignInView.swift */; };
+		3886EEB625CCE9D900E3A54A /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EEB525CCE9D900E3A54A /* SignIn.swift */; };
+		3886EEBC25CD03F100E3A54A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EEBB25CD03F100E3A54A /* Extensions.swift */; };
+		8114FE4FD1E68EB09E4EEEBA /* Pods_ApplaudoTMDBApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DC2C8E5DA1BA2C07F41033 /* Pods_ApplaudoTMDBApp.framework */; };
+		FAD09DFCB8570D5F52DCD1A6 /* Pods_ApplaudoTMDBAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1AC24FA50893B69AC014AC /* Pods_ApplaudoTMDBAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3886EE7325CCB85500E3A54A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3886EE5425CCB85200E3A54A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3886EE5B25CCB85200E3A54A;
+			remoteInfo = ApplaudoTMDBApp;
+		};
+		3886EE7E25CCB85500E3A54A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3886EE5425CCB85200E3A54A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3886EE5B25CCB85200E3A54A;
+			remoteInfo = ApplaudoTMDBApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02611232AD1BA96D973EA061 /* Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests/Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0B12EC69123C7A5AA41BB848 /* Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests/Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0E1AC24FA50893B69AC014AC /* Pods_ApplaudoTMDBAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplaudoTMDBAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		339A2502E483C8681FA026EC /* Pods-ApplaudoTMDBApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplaudoTMDBApp.debug.xcconfig"; path = "Target Support Files/Pods-ApplaudoTMDBApp/Pods-ApplaudoTMDBApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3886EE5C25CCB85200E3A54A /* ApplaudoTMDBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplaudoTMDBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3886EE5F25CCB85200E3A54A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3886EE6125CCB85200E3A54A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3886EE6325CCB85200E3A54A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3886EE6625CCB85200E3A54A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3886EE6825CCB85400E3A54A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3886EE6B25CCB85400E3A54A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3886EE6D25CCB85400E3A54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3886EE7225CCB85400E3A54A /* ApplaudoTMDBAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplaudoTMDBAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3886EE7625CCB85500E3A54A /* ApplaudoTMDBAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplaudoTMDBAppTests.swift; sourceTree = "<group>"; };
+		3886EE7825CCB85500E3A54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3886EE7D25CCB85500E3A54A /* ApplaudoTMDBAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplaudoTMDBAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3886EE8125CCB85500E3A54A /* ApplaudoTMDBAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplaudoTMDBAppUITests.swift; sourceTree = "<group>"; };
+		3886EE8325CCB85500E3A54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3886EE9825CCBD3B00E3A54A /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		3886EEA025CCBD4600E3A54A /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		3886EEA625CCBDD300E3A54A /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
+		3886EEAB25CCBDE600E3A54A /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		3886EEB025CCBDF300E3A54A /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		3886EEB525CCE9D900E3A54A /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		3886EEBB25CD03F100E3A54A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		54FAAB31514855591CFB4057 /* Pods-ApplaudoTMDBAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplaudoTMDBAppTests.release.xcconfig"; path = "Target Support Files/Pods-ApplaudoTMDBAppTests/Pods-ApplaudoTMDBAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C6EC301969201B851F94D73 /* Pods-ApplaudoTMDBApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplaudoTMDBApp.release.xcconfig"; path = "Target Support Files/Pods-ApplaudoTMDBApp/Pods-ApplaudoTMDBApp.release.xcconfig"; sourceTree = "<group>"; };
+		6DA7D43AFB718F12749209A1 /* Pods_ApplaudoTMDBApp_ApplaudoTMDBAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplaudoTMDBApp_ApplaudoTMDBAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DC2C8E5DA1BA2C07F41033 /* Pods_ApplaudoTMDBApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplaudoTMDBApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C15AC2E4111846C716F403DD /* Pods-ApplaudoTMDBAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplaudoTMDBAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ApplaudoTMDBAppTests/Pods-ApplaudoTMDBAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3886EE5925CCB85200E3A54A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8114FE4FD1E68EB09E4EEEBA /* Pods_ApplaudoTMDBApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3886EE6F25CCB85400E3A54A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD09DFCB8570D5F52DCD1A6 /* Pods_ApplaudoTMDBAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3886EE7A25CCB85500E3A54A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D19A4891E9FFD120AA6B65 /* Pods_ApplaudoTMDBApp_ApplaudoTMDBAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10B6C0BCEBF0050E23EAE53E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC2C8E5DA1BA2C07F41033 /* Pods_ApplaudoTMDBApp.framework */,
+				6DA7D43AFB718F12749209A1 /* Pods_ApplaudoTMDBApp_ApplaudoTMDBAppUITests.framework */,
+				0E1AC24FA50893B69AC014AC /* Pods_ApplaudoTMDBAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3886EE5325CCB85200E3A54A = {
+			isa = PBXGroup;
+			children = (
+				3886EE5E25CCB85200E3A54A /* ApplaudoTMDBApp */,
+				3886EE7525CCB85500E3A54A /* ApplaudoTMDBAppTests */,
+				3886EE8025CCB85500E3A54A /* ApplaudoTMDBAppUITests */,
+				3886EE5D25CCB85200E3A54A /* Products */,
+				F3B8A39598AA9CDA87FADE3B /* Pods */,
+				10B6C0BCEBF0050E23EAE53E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3886EE5D25CCB85200E3A54A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3886EE5C25CCB85200E3A54A /* ApplaudoTMDBApp.app */,
+				3886EE7225CCB85400E3A54A /* ApplaudoTMDBAppTests.xctest */,
+				3886EE7D25CCB85500E3A54A /* ApplaudoTMDBAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3886EE5E25CCB85200E3A54A /* ApplaudoTMDBApp */ = {
+			isa = PBXGroup;
+			children = (
+				3886EEBA25CD03E400E3A54A /* Helpers */,
+				3886EE9525CCBD0D00E3A54A /* Core */,
+				3886EE9225CCBBAC00E3A54A /* Controllers */,
+				3886EE9425CCBBBF00E3A54A /* Models */,
+				3886EE5F25CCB85200E3A54A /* AppDelegate.swift */,
+				3886EE6125CCB85200E3A54A /* SceneDelegate.swift */,
+				3886EE6325CCB85200E3A54A /* ViewController.swift */,
+				3886EE6525CCB85200E3A54A /* Main.storyboard */,
+				3886EE6825CCB85400E3A54A /* Assets.xcassets */,
+				3886EE6A25CCB85400E3A54A /* LaunchScreen.storyboard */,
+				3886EE6D25CCB85400E3A54A /* Info.plist */,
+			);
+			path = ApplaudoTMDBApp;
+			sourceTree = "<group>";
+		};
+		3886EE7525CCB85500E3A54A /* ApplaudoTMDBAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3886EE7625CCB85500E3A54A /* ApplaudoTMDBAppTests.swift */,
+				3886EE7825CCB85500E3A54A /* Info.plist */,
+			);
+			path = ApplaudoTMDBAppTests;
+			sourceTree = "<group>";
+		};
+		3886EE8025CCB85500E3A54A /* ApplaudoTMDBAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3886EE8125CCB85500E3A54A /* ApplaudoTMDBAppUITests.swift */,
+				3886EE8325CCB85500E3A54A /* Info.plist */,
+			);
+			path = ApplaudoTMDBAppUITests;
+			sourceTree = "<group>";
+		};
+		3886EE9225CCBBAC00E3A54A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3886EEA525CCBDC700E3A54A /* SignIn */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3886EE9425CCBBBF00E3A54A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3886EEB525CCE9D900E3A54A /* SignIn.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3886EE9525CCBD0D00E3A54A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3886EE9725CCBD2E00E3A54A /* Bases */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3886EE9725CCBD2E00E3A54A /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				3886EE9825CCBD3B00E3A54A /* BaseController.swift */,
+				3886EEA025CCBD4600E3A54A /* BasePresenter.swift */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		3886EEA525CCBDC700E3A54A /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				3886EEA625CCBDD300E3A54A /* SignInController.swift */,
+				3886EEAB25CCBDE600E3A54A /* SignInPresenter.swift */,
+				3886EEB025CCBDF300E3A54A /* SignInView.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		3886EEBA25CD03E400E3A54A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3886EEBB25CD03F100E3A54A /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F3B8A39598AA9CDA87FADE3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				339A2502E483C8681FA026EC /* Pods-ApplaudoTMDBApp.debug.xcconfig */,
+				5C6EC301969201B851F94D73 /* Pods-ApplaudoTMDBApp.release.xcconfig */,
+				02611232AD1BA96D973EA061 /* Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests.debug.xcconfig */,
+				0B12EC69123C7A5AA41BB848 /* Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests.release.xcconfig */,
+				C15AC2E4111846C716F403DD /* Pods-ApplaudoTMDBAppTests.debug.xcconfig */,
+				54FAAB31514855591CFB4057 /* Pods-ApplaudoTMDBAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3886EE5B25CCB85200E3A54A /* ApplaudoTMDBApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3886EE8625CCB85500E3A54A /* Build configuration list for PBXNativeTarget "ApplaudoTMDBApp" */;
+			buildPhases = (
+				DE65FC0D7DD06C3ACCDDE502 /* [CP] Check Pods Manifest.lock */,
+				3886EE5825CCB85200E3A54A /* Sources */,
+				3886EE5925CCB85200E3A54A /* Frameworks */,
+				3886EE5A25CCB85200E3A54A /* Resources */,
+				86CC9B5447C6445BF8F6B7C5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApplaudoTMDBApp;
+			productName = ApplaudoTMDBApp;
+			productReference = 3886EE5C25CCB85200E3A54A /* ApplaudoTMDBApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3886EE7125CCB85400E3A54A /* ApplaudoTMDBAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3886EE8925CCB85500E3A54A /* Build configuration list for PBXNativeTarget "ApplaudoTMDBAppTests" */;
+			buildPhases = (
+				75A06939879EEB61D5704E77 /* [CP] Check Pods Manifest.lock */,
+				3886EE6E25CCB85400E3A54A /* Sources */,
+				3886EE6F25CCB85400E3A54A /* Frameworks */,
+				3886EE7025CCB85400E3A54A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3886EE7425CCB85500E3A54A /* PBXTargetDependency */,
+			);
+			name = ApplaudoTMDBAppTests;
+			productName = ApplaudoTMDBAppTests;
+			productReference = 3886EE7225CCB85400E3A54A /* ApplaudoTMDBAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3886EE7C25CCB85500E3A54A /* ApplaudoTMDBAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3886EE8C25CCB85500E3A54A /* Build configuration list for PBXNativeTarget "ApplaudoTMDBAppUITests" */;
+			buildPhases = (
+				E6C3A8EDED6013810CDD2DE6 /* [CP] Check Pods Manifest.lock */,
+				3886EE7925CCB85500E3A54A /* Sources */,
+				3886EE7A25CCB85500E3A54A /* Frameworks */,
+				3886EE7B25CCB85500E3A54A /* Resources */,
+				9ED048A137DC725FCBCCB756 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3886EE7F25CCB85500E3A54A /* PBXTargetDependency */,
+			);
+			name = ApplaudoTMDBAppUITests;
+			productName = ApplaudoTMDBAppUITests;
+			productReference = 3886EE7D25CCB85500E3A54A /* ApplaudoTMDBAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3886EE5425CCB85200E3A54A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3886EE5B25CCB85200E3A54A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3886EE7125CCB85400E3A54A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3886EE5B25CCB85200E3A54A;
+					};
+					3886EE7C25CCB85500E3A54A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3886EE5B25CCB85200E3A54A;
+					};
+				};
+			};
+			buildConfigurationList = 3886EE5725CCB85200E3A54A /* Build configuration list for PBXProject "ApplaudoTMDBApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3886EE5325CCB85200E3A54A;
+			productRefGroup = 3886EE5D25CCB85200E3A54A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3886EE5B25CCB85200E3A54A /* ApplaudoTMDBApp */,
+				3886EE7125CCB85400E3A54A /* ApplaudoTMDBAppTests */,
+				3886EE7C25CCB85500E3A54A /* ApplaudoTMDBAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3886EE5A25CCB85200E3A54A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3886EE6C25CCB85400E3A54A /* LaunchScreen.storyboard in Resources */,
+				3886EE6925CCB85400E3A54A /* Assets.xcassets in Resources */,
+				3886EE6725CCB85200E3A54A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3886EE7025CCB85400E3A54A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3886EE7B25CCB85500E3A54A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75A06939879EEB61D5704E77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApplaudoTMDBAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86CC9B5447C6445BF8F6B7C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApplaudoTMDBApp/Pods-ApplaudoTMDBApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApplaudoTMDBApp/Pods-ApplaudoTMDBApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ApplaudoTMDBApp/Pods-ApplaudoTMDBApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ED048A137DC725FCBCCB756 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests/Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests/Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests/Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE65FC0D7DD06C3ACCDDE502 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApplaudoTMDBApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6C3A8EDED6013810CDD2DE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3886EE5825CCB85200E3A54A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3886EE6425CCB85200E3A54A /* ViewController.swift in Sources */,
+				3886EEB625CCE9D900E3A54A /* SignIn.swift in Sources */,
+				3886EEA125CCBD4600E3A54A /* BasePresenter.swift in Sources */,
+				3886EE6025CCB85200E3A54A /* AppDelegate.swift in Sources */,
+				3886EEA725CCBDD300E3A54A /* SignInController.swift in Sources */,
+				3886EEBC25CD03F100E3A54A /* Extensions.swift in Sources */,
+				3886EEAC25CCBDE600E3A54A /* SignInPresenter.swift in Sources */,
+				3886EE9925CCBD3B00E3A54A /* BaseController.swift in Sources */,
+				3886EEB125CCBDF300E3A54A /* SignInView.swift in Sources */,
+				3886EE6225CCB85200E3A54A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3886EE6E25CCB85400E3A54A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3886EE7725CCB85500E3A54A /* ApplaudoTMDBAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3886EE7925CCB85500E3A54A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3886EE8225CCB85500E3A54A /* ApplaudoTMDBAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3886EE7425CCB85500E3A54A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3886EE5B25CCB85200E3A54A /* ApplaudoTMDBApp */;
+			targetProxy = 3886EE7325CCB85500E3A54A /* PBXContainerItemProxy */;
+		};
+		3886EE7F25CCB85500E3A54A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3886EE5B25CCB85200E3A54A /* ApplaudoTMDBApp */;
+			targetProxy = 3886EE7E25CCB85500E3A54A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3886EE6525CCB85200E3A54A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3886EE6625CCB85200E3A54A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3886EE6A25CCB85400E3A54A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3886EE6B25CCB85400E3A54A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3886EE8425CCB85500E3A54A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3886EE8525CCB85500E3A54A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3886EE8725CCB85500E3A54A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 339A2502E483C8681FA026EC /* Pods-ApplaudoTMDBApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNG4PLML66;
+				INFOPLIST_FILE = ApplaudoTMDBApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielrico.ApplaudoTMDBApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3886EE8825CCB85500E3A54A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C6EC301969201B851F94D73 /* Pods-ApplaudoTMDBApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNG4PLML66;
+				INFOPLIST_FILE = ApplaudoTMDBApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielrico.ApplaudoTMDBApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3886EE8A25CCB85500E3A54A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C15AC2E4111846C716F403DD /* Pods-ApplaudoTMDBAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNG4PLML66;
+				INFOPLIST_FILE = ApplaudoTMDBAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielrico.ApplaudoTMDBAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApplaudoTMDBApp.app/ApplaudoTMDBApp";
+			};
+			name = Debug;
+		};
+		3886EE8B25CCB85500E3A54A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54FAAB31514855591CFB4057 /* Pods-ApplaudoTMDBAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNG4PLML66;
+				INFOPLIST_FILE = ApplaudoTMDBAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielrico.ApplaudoTMDBAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApplaudoTMDBApp.app/ApplaudoTMDBApp";
+			};
+			name = Release;
+		};
+		3886EE8D25CCB85500E3A54A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02611232AD1BA96D973EA061 /* Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNG4PLML66;
+				INFOPLIST_FILE = ApplaudoTMDBAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielrico.ApplaudoTMDBAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ApplaudoTMDBApp;
+			};
+			name = Debug;
+		};
+		3886EE8E25CCB85500E3A54A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B12EC69123C7A5AA41BB848 /* Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNG4PLML66;
+				INFOPLIST_FILE = ApplaudoTMDBAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielrico.ApplaudoTMDBAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ApplaudoTMDBApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3886EE5725CCB85200E3A54A /* Build configuration list for PBXProject "ApplaudoTMDBApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3886EE8425CCB85500E3A54A /* Debug */,
+				3886EE8525CCB85500E3A54A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3886EE8625CCB85500E3A54A /* Build configuration list for PBXNativeTarget "ApplaudoTMDBApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3886EE8725CCB85500E3A54A /* Debug */,
+				3886EE8825CCB85500E3A54A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3886EE8925CCB85500E3A54A /* Build configuration list for PBXNativeTarget "ApplaudoTMDBAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3886EE8A25CCB85500E3A54A /* Debug */,
+				3886EE8B25CCB85500E3A54A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3886EE8C25CCB85500E3A54A /* Build configuration list for PBXNativeTarget "ApplaudoTMDBAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3886EE8D25CCB85500E3A54A /* Debug */,
+				3886EE8E25CCB85500E3A54A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3886EE5425CCB85200E3A54A /* Project object */;
+}

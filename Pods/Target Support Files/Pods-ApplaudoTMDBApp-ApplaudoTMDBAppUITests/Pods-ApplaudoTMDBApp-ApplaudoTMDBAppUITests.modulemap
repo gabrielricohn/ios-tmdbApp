@@ -1,0 +1,6 @@
+framework module Pods_ApplaudoTMDBApp_ApplaudoTMDBAppUITests {
+  umbrella header "Pods-ApplaudoTMDBApp-ApplaudoTMDBAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
