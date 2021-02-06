@@ -118,6 +118,10 @@ extension SignInViewController: SignInView {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
             print("Funciona!")
+            
+            let tmdbService = TmdbService()
+            tmdbService.getTvShowsCategoryApi(tvCategory: .AiringToday)
+            
             self.loadingIndicator.isHidden = true
             self.logInButton.isHidden = false
         })
@@ -141,16 +145,8 @@ extension SignInViewController: UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-
+        
         textField.text = textField.text?.replacingOccurrences(of: " ", with: "")
-        
-        let text = (textField.text! as NSString).replacingCharacters(in: range, with: string)
-        
-//        if !userNameTextField.text!.isEmpty && !passwordTextField.text!.isEmpty {
-//            logInButton.isEnabled = true
-//        } else {
-//            logInButton.isEnabled = false
-//        }
         
         return true
     }

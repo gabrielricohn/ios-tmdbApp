@@ -27,7 +27,8 @@
 		3886EED725CE39F900E3A54A /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EED625CE39F900E3A54A /* ApiResponse.swift */; };
 		3886EEDD25CE3A2700E3A54A /* WebServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EEDC25CE3A2700E3A54A /* WebServiceConstants.swift */; };
 		3886EEE225CE3A9F00E3A54A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EEE125CE3A9F00E3A54A /* Constants.swift */; };
-		3886EEE825CE3DA100E3A54A /* tmdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EEE725CE3DA100E3A54A /* tmdbService.swift */; };
+		3886EEE825CE3DA100E3A54A /* TmdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EEE725CE3DA100E3A54A /* TmdbService.swift */; };
+		3886EF0A25CE56D800E3A54A /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EF0925CE56D800E3A54A /* Enums.swift */; };
 		8114FE4FD1E68EB09E4EEEBA /* Pods_ApplaudoTMDBApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DC2C8E5DA1BA2C07F41033 /* Pods_ApplaudoTMDBApp.framework */; };
 		FAD09DFCB8570D5F52DCD1A6 /* Pods_ApplaudoTMDBAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1AC24FA50893B69AC014AC /* Pods_ApplaudoTMDBAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -79,7 +80,8 @@
 		3886EED625CE39F900E3A54A /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		3886EEDC25CE3A2700E3A54A /* WebServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceConstants.swift; sourceTree = "<group>"; };
 		3886EEE125CE3A9F00E3A54A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		3886EEE725CE3DA100E3A54A /* tmdbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmdbService.swift; sourceTree = "<group>"; };
+		3886EEE725CE3DA100E3A54A /* TmdbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbService.swift; sourceTree = "<group>"; };
+		3886EF0925CE56D800E3A54A /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		54FAAB31514855591CFB4057 /* Pods-ApplaudoTMDBAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplaudoTMDBAppTests.release.xcconfig"; path = "Target Support Files/Pods-ApplaudoTMDBAppTests/Pods-ApplaudoTMDBAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		5C6EC301969201B851F94D73 /* Pods-ApplaudoTMDBApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplaudoTMDBApp.release.xcconfig"; path = "Target Support Files/Pods-ApplaudoTMDBApp/Pods-ApplaudoTMDBApp.release.xcconfig"; sourceTree = "<group>"; };
 		6DA7D43AFB718F12749209A1 /* Pods_ApplaudoTMDBApp_ApplaudoTMDBAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplaudoTMDBApp_ApplaudoTMDBAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -234,6 +236,7 @@
 			children = (
 				3886EEBB25CD03F100E3A54A /* Extensions.swift */,
 				3886EECE25CE39A800E3A54A /* Network.swift */,
+				3886EF0925CE56D800E3A54A /* Enums.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -250,7 +253,7 @@
 		3886EEE625CE3D9100E3A54A /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				3886EEE725CE3DA100E3A54A /* tmdbService.swift */,
+				3886EEE725CE3DA100E3A54A /* TmdbService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -515,11 +518,12 @@
 				3886EEBC25CD03F100E3A54A /* Extensions.swift in Sources */,
 				3886EEAC25CCBDE600E3A54A /* SignInPresenter.swift in Sources */,
 				3886EE9925CCBD3B00E3A54A /* BaseController.swift in Sources */,
-				3886EEE825CE3DA100E3A54A /* tmdbService.swift in Sources */,
+				3886EEE825CE3DA100E3A54A /* TmdbService.swift in Sources */,
 				3886EEDD25CE3A2700E3A54A /* WebServiceConstants.swift in Sources */,
 				3886EED725CE39F900E3A54A /* ApiResponse.swift in Sources */,
 				3886EEE225CE3A9F00E3A54A /* Constants.swift in Sources */,
 				3886EEB125CCBDF300E3A54A /* SignInView.swift in Sources */,
+				3886EF0A25CE56D800E3A54A /* Enums.swift in Sources */,
 				3886EE6225CCB85200E3A54A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

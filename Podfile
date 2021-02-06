@@ -8,9 +8,10 @@ target 'ApplaudoTMDBApp' do
   # Pods for ApplaudoTMDBApp
   pod 'ObjectMapper', '~> 3.5'
   pod 'RxAlamofire'
-  pod 'RxCocoa', '~> 6.0.0'
-  pod 'RxSwift', '~> 6.0.0'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'Alamofire', '~> 5.2'
 
   target 'ApplaudoTMDBAppTests' do
     inherit! :search_paths
