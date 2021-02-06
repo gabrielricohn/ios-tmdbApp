@@ -55,6 +55,7 @@ class SignInController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
         registerNotifications()
         
         signInPresenter = SignInPresenter()
@@ -65,8 +66,9 @@ class SignInController: UIViewController {
         signInScrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height+150)
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
         unregisterNotifications()
     }
     
@@ -123,11 +125,9 @@ class SignInController: UIViewController {
 
 extension SignInController: SignInView {
     func navigateToHome() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewControllerWithIdentifier("NewsDetailsVCID") as NewsDetailsViewController
-//         vc.newsObj = newsObj
-//         navigationController?.pushViewController(vc,
-//         animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let vc = storyboard.instantiateViewController(withIdentifier: "HomeController") as! HomeController
+        self.navigationController?.pushViewController(vc,animated: true)
     }
     
     func showLoadingIndicator() {

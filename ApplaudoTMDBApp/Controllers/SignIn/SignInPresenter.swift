@@ -31,12 +31,13 @@ class SignInPresenter: BasePresenter {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
             print("Funciona!")
-            
+
             self.signInView?.hideLoadingIndicator()
-            
+
             self.signInView?.navigateToHome()
-        
+
         })
+        
     }
     
 }
