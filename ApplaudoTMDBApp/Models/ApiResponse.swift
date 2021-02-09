@@ -14,13 +14,11 @@ class ApiResponse: NSObject {
   var statusCode = HTTPResponseCode(rawValue: 0)
   var data = [String:Any]()
   var responseFor : ApiResponseType
-  var message = ""
   
-  init(status:Bool, response:[String:Any], responseType:ApiResponseType, msg:String) {
+  init(status:Bool, response:[String:Any], responseType:ApiResponseType) {
     self.status = status
     self.data = response
     self.responseFor = responseType
-    self.message = msg
   }
   
 }

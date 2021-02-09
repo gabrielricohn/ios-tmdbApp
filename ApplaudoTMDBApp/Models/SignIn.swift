@@ -10,4 +10,5 @@ import Foundation
 struct SignInDetails {
     var userName: String = ""
     var password: String = ""
+    var token: String = ""
 }

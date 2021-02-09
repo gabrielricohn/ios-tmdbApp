@@ -8,5 +8,7 @@
 import Foundation
 
 protocol HomeView {
-    func showTvShows()
+    func retrieveTvShows(categorySelected: TvCategory)
+    func loadInfoFromServer(shows: [TvShows])
+    
 }

@@ -12,18 +12,17 @@ class NetworkHelper : NSObject {
     class func checkResponse(statusCode:HTTPResponseCode,responseDict:[String:Any]) -> ApiResponse  {
         switch statusCode {
         case .Success:
-            let apiResponse = ApiResponse.init(status: true, response: responseDict, responseType: .Default,msg: responseDict[ApiConstants.ApiResponse.message] as? String ?? "")
+            let apiResponse = ApiResponse.init(status: true, response: responseDict, responseType: .Default)
             apiResponse.statusCode = HTTPResponseCode.Success
             return  apiResponse
         case .Unauthorized:
-            let apiResponse = ApiResponse.init(status: false, response: responseDict, responseType: .Default,msg: responseDict[ApiConstants.ApiResponse.message] as! String)
+            print(responseDict)
+            let apiResponse = ApiResponse.init(status: false, response: responseDict, responseType: .Default)
             apiResponse.statusCode = statusCode
-            
-            let message = apiResponse.message
             
             return apiResponse
         default:
-            let apiResponse = ApiResponse.init(status: false, response: responseDict, responseType: .Default,msg: responseDict[ApiConstants.ApiResponse.message] as! String)
+            let apiResponse = ApiResponse.init(status: false, response: responseDict, responseType: .Default)
             apiResponse.statusCode = statusCode
             return apiResponse
         }

@@ -13,5 +13,17 @@ class ApiConstants {
         static let message = "message"
         static let data = "data"
     }
+}
+
+struct UserDefaultValues {
+    
+    struct Tokens {
+        static let requestToken = "user_session_token"
+        static let sessionId = "session_id"
+    }
+    
+    struct PersonalInfo {
+        static let profileId = "user_id"
+    }
     
 }

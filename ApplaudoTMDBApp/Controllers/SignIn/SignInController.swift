@@ -17,7 +17,11 @@ class SignInController: UIViewController {
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
+    weak var applicationDelegate = UIApplication.shared.delegate as? AppDelegate
+    
     var signInPresenter: SignInPresenter!
+    
+    var authToken: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +33,49 @@ class SignInController: UIViewController {
         userNameTextField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
         
+        loadingIndicator.color = UIColor.white
+        
+        passwordTextField.isSecureTextEntry = true
+        
+        signInScrollView.isScrollEnabled = false
+    
+        loadingIndicator.isHidden = true
+        
+        logInButton.isEnabled = false
+        
+        setupPresenter()
+        
+        setupUI()
+        
+        if let appDelegate = applicationDelegate{
+            appDelegate.connectionDelegate = self
+        }
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+        registerNotifications()
+//        retrieveToken()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        signInScrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height+150)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+        unregisterNotifications()
+    }
+    
+    func setupPresenter() {
+        signInPresenter = SignInPresenter(tmdbService: TmdbService())
+        signInPresenter.attachView(view: self)
+    }
+    
+    func setupUI() {
         logInButton.backgroundColor = UIColor.systemGreen
         logInButton.tintColor = UIColor.white
         logInButton.layer.cornerRadius = 5
@@ -40,36 +87,14 @@ class SignInController: UIViewController {
         
         userNameTextField.textColor = UIColor.black
         passwordTextField.textColor = UIColor.black
-        
-        loadingIndicator.color = UIColor.white
-        
-        passwordTextField.isSecureTextEntry = true
-        
-        signInScrollView.isScrollEnabled = false
-    
-        loadingIndicator.isHidden = true
-        
-        logInButton.isEnabled = false
-        
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
-        registerNotifications()
-        
-        signInPresenter = SignInPresenter()
-        signInPresenter.attachView(view: self)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        signInScrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height+150)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
-        unregisterNotifications()
+    func checkForPreviousSession() {
+        if Utility.sessionToken.count != 0 {
+            
+            navigateToHome()
+            
+        }
     }
     
     private func registerNotifications() {
@@ -115,15 +140,38 @@ class SignInController: UIViewController {
         
     }
     
+    func createSignInModel() -> SignInDetails {
+        var signInDetails = SignInDetails()
+        signInDetails.userName = userNameTextField.text!
+        signInDetails.password = passwordTextField.text!
+        signInDetails.token = authToken
+        return signInDetails
+    }
+    
     @IBAction func logInAction(_ sender: Any) {
         
-        validateSignIn(username: userNameTextField.text!, password: passwordTextField.text!)
+        validateSignIn()
         
+    }
+    
+    func showAlert(withTitle title: String, withMessage message:String) {
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            let ok = UIAlertAction(title: "OK", style: .default, handler: { action in
+            })
+            alert.addAction(ok)
+            DispatchQueue.main.async(execute: {
+                self.present(alert, animated: true)
+            })
     }
     
 }
 
 extension SignInController: SignInView {
+    
+    func loadTokenFromServer(token: String) {
+        authToken = token
+    }
+    
     func navigateToHome() {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let vc = storyboard.instantiateViewController(withIdentifier: "HomeController") as! HomeController
@@ -144,12 +192,34 @@ extension SignInController: SignInView {
         
     }
     
-    func validateSignIn(username: String, password: String) {
-        
-        signInPresenter.checkLogInCredentials(username: username, password: password)
+    func validateSignIn() {
+                
+        signInPresenter.fetchAuthTokenfromApi(completion: { success in
+            if success {
+                self.signInPresenter.checkLogInCredentials(model: self.createSignInModel())
+            }
+        })
         
     }
     
+    func signInFailed(messageApi: String) {
+        
+        showAlert(withTitle: "Login Failed", withMessage: messageApi)
+                
+    }
+    
+}
+
+extension SignInController: CoreConnectionDelegate {
+    func didInternetConnect() {
+        setupPresenter()
+    }
+    
+    func didInternetDisconnect() {
+        guard let presenter = signInPresenter else{ return }
+        presenter.destroy()
+        presenter.detachView()
+    }
 }
 
 extension SignInController: UITextFieldDelegate {

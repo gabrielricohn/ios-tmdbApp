@@ -12,6 +12,8 @@ target 'ApplaudoTMDBApp' do
   pod 'RxCocoa'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Alamofire', '~> 5.2'
+  pod 'ReachabilitySwift'
+  pod 'Locksmith'
 
   target 'ApplaudoTMDBAppTests' do
     inherit! :search_paths
