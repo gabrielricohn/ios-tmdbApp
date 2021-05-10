@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_ApplaudoTMDBAppVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_ApplaudoTMDBAppVersionString[];
+FOUNDATION_EXPORT double Pods_TMDBAppVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_TMDBAppVersionString[];
 

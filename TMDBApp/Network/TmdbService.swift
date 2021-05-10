@@ -1,6 +1,6 @@
 //
 //  TmdbService.swift
-//  ApplaudoTMDBApp
+//  TMDBApp
 //
 //  Created by Gabriel Rico on 5/2/21.
 //

@@ -1,6 +1,6 @@
 //
 //  TvShowsCell.swift
-//  ApplaudoTMDBApp
+//  TMDBApp
 //
 //  Created by Gabriel Rico on 16/2/21.
 //

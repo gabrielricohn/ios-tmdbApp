@@ -1,6 +1,6 @@
 //
 //  Profile.swift
-//  ApplaudoTMDBApp
+//  TMDBApp
 //
 //  Created by Gabriel Rico on 8/2/21.
 //

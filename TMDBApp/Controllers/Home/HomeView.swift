@@ -1,6 +1,6 @@
 //
 //  HomeView.swift
-//  ApplaudoTMDBApp
+//  TMDBApp
 //
 //  Created by Gabriel Rico on 6/2/21.
 //

@@ -24,10 +24,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.applaudoStudios</string>
+			<string>com.proj4world</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>applaudo</string>
+				<string>proj4world</string>
 			</array>
 		</dict>
 	</array>

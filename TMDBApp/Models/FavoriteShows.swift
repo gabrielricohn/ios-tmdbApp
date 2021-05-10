@@ -1,6 +1,6 @@
 //
 //  FavoriteShows.swift
-//  ApplaudoTMDBApp
+//  TMDBApp
 //
 //  Created by Gabriel Rico on 9/2/21.
 //
