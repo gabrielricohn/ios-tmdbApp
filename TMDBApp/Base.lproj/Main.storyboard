@@ -29,7 +29,7 @@
         <!--SignInController-->
         <scene sceneID="1gG-rX-YM7">
             <objects>
-                <viewController storyboardIdentifier="SignInController" title="SignInController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="doY-r3-wdN" customClass="SignInController" customModule="ApplaudoTMDBApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInController" title="SignInController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="doY-r3-wdN" customClass="SignInController" customModule="TMDBApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6XU-OJ-cXy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +145,7 @@
         <!--TV Shows-->
         <scene sceneID="frx-1o-6Rg">
             <objects>
-                <viewController storyboardIdentifier="HomeController" id="w0o-6U-Wlq" customClass="HomeController" customModule="ApplaudoTMDBApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeController" id="w0o-6U-Wlq" customClass="HomeController" customModule="TMDBApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="leY-An-69p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,7 +242,7 @@
         <!--Profile Controller-->
         <scene sceneID="kN4-7Q-Q4K">
             <objects>
-                <viewController storyboardIdentifier="ProfileController" id="4kJ-JW-fHQ" customClass="ProfileController" customModule="ApplaudoTMDBApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileController" id="4kJ-JW-fHQ" customClass="ProfileController" customModule="TMDBApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d42-tj-nhy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -272,12 +272,12 @@
         <!--Tv Show Details Controller-->
         <scene sceneID="iXs-Ug-K2E">
             <objects>
-                <viewController storyboardIdentifier="TvShowDetailsController" id="qDq-8n-z2f" customClass="TvShowDetailsController" customModule="ApplaudoTMDBApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TvShowDetailsController" id="qDq-8n-z2f" customClass="TvShowDetailsController" customModule="TMDBApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hVN-mP-6pn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0gg-FT-5Tm" customClass="AsyncImage" customModule="ApplaudoTMDBApp" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0gg-FT-5Tm" customClass="AsyncImage" customModule="TMDBApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="SU0-nZ-Qn3"/>

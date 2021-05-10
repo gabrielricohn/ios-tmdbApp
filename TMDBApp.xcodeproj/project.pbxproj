@@ -10,6 +10,9 @@
 		22D19A4891E9FFD120AA6B65 /* Pods_ApplaudoTMDBApp_ApplaudoTMDBAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA7D43AFB718F12749209A1 /* Pods_ApplaudoTMDBApp_ApplaudoTMDBAppUITests.framework */; };
 		3818250425D2474F000BD47C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3818250325D2474F000BD47C /* Profile.swift */; };
 		3818251825D2FAD9000BD47C /* FavoriteShows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3818251725D2FAD9000BD47C /* FavoriteShows.swift */; };
+		38367F4825DCE02B00E3D4D6 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38367F4725DCE02B00E3D4D6 /* HomeController.swift */; };
+		38367F4F25DCE09A00E3D4D6 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38367F4E25DCE09A00E3D4D6 /* CategoryCell.swift */; };
+		38367F5425DCE0E100E3D4D6 /* TvShowsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38367F5325DCE0E100E3D4D6 /* TvShowsCell.swift */; };
 		3840643F25D065A1007FBC3E /* TvShowDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3840643E25D065A1007FBC3E /* TvShowDetailsController.swift */; };
 		3840644425D065AF007FBC3E /* TvShowDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3840644325D065AF007FBC3E /* TvShowDetailsPresenter.swift */; };
 		3840644925D065BB007FBC3E /* TvShowDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3840644825D065BB007FBC3E /* TvShowDetailsView.swift */; };
@@ -37,7 +40,6 @@
 		3886EEE225CE3A9F00E3A54A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EEE125CE3A9F00E3A54A /* Constants.swift */; };
 		3886EEE825CE3DA100E3A54A /* TmdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EEE725CE3DA100E3A54A /* TmdbService.swift */; };
 		3886EF0A25CE56D800E3A54A /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EF0925CE56D800E3A54A /* Enums.swift */; };
-		3886EF1325CE75AD00E3A54A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EF1225CE75AD00E3A54A /* HomeController.swift */; };
 		3886EF1B25CE75B800E3A54A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EF1A25CE75B800E3A54A /* HomePresenter.swift */; };
 		3886EF2025CE75C800E3A54A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EF1F25CE75C800E3A54A /* HomeView.swift */; };
 		3886EF4825CF75BE00E3A54A /* TvShows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886EF4725CF75BE00E3A54A /* TvShows.swift */; };
@@ -77,6 +79,9 @@
 		339A2502E483C8681FA026EC /* Pods-ApplaudoTMDBApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplaudoTMDBApp.debug.xcconfig"; path = "Target Support Files/Pods-ApplaudoTMDBApp/Pods-ApplaudoTMDBApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3818250325D2474F000BD47C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		3818251725D2FAD9000BD47C /* FavoriteShows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteShows.swift; sourceTree = "<group>"; };
+		38367F4725DCE02B00E3D4D6 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		38367F4E25DCE09A00E3D4D6 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		38367F5325DCE0E100E3D4D6 /* TvShowsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsCell.swift; sourceTree = "<group>"; };
 		3840643E25D065A1007FBC3E /* TvShowDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailsController.swift; sourceTree = "<group>"; };
 		3840644325D065AF007FBC3E /* TvShowDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailsPresenter.swift; sourceTree = "<group>"; };
 		3840644825D065BB007FBC3E /* TvShowDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailsView.swift; sourceTree = "<group>"; };
@@ -110,7 +115,6 @@
 		3886EEE125CE3A9F00E3A54A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3886EEE725CE3DA100E3A54A /* TmdbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbService.swift; sourceTree = "<group>"; };
 		3886EF0925CE56D800E3A54A /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		3886EF1225CE75AD00E3A54A /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeController.swift; path = ../../../../../../HomeController.swift; sourceTree = "<group>"; };
 		3886EF1A25CE75B800E3A54A /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		3886EF1F25CE75C800E3A54A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3886EF4725CF75BE00E3A54A /* TvShows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShows.swift; sourceTree = "<group>"; };
@@ -165,6 +169,22 @@
 				0E1AC24FA50893B69AC014AC /* Pods_ApplaudoTMDBAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38367F4C25DCE06F00E3D4D6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				38367F5325DCE0E100E3D4D6 /* TvShowsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		38367F4D25DCE07A00E3D4D6 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				38367F4E25DCE09A00E3D4D6 /* CategoryCell.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		3840643D25D0657F007FBC3E /* TvShowDetails */ = {
@@ -325,7 +345,9 @@
 		3886EF1125CE759600E3A54A /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				3886EF1225CE75AD00E3A54A /* HomeController.swift */,
+				38367F4D25DCE07A00E3D4D6 /* Menu */,
+				38367F4C25DCE06F00E3D4D6 /* Cells */,
+				38367F4725DCE02B00E3D4D6 /* HomeController.swift */,
 				3886EF1A25CE75B800E3A54A /* HomePresenter.swift */,
 				3886EF1F25CE75C800E3A54A /* HomeView.swift */,
 			);
@@ -595,6 +617,7 @@
 			files = (
 				3881333F25D202690094EC9F /* Session.swift in Sources */,
 				388F641D25D0FE6E00C45C31 /* Utility.swift in Sources */,
+				38367F4F25DCE09A00E3D4D6 /* CategoryCell.swift in Sources */,
 				388F646B25D1BB3B00C45C31 /* Modal.swift in Sources */,
 				3886EEB625CCE9D900E3A54A /* SignIn.swift in Sources */,
 				3886EEA125CCBD4600E3A54A /* BasePresenter.swift in Sources */,
@@ -607,12 +630,12 @@
 				3886EEBC25CD03F100E3A54A /* Extensions.swift in Sources */,
 				388F647B25D1CE6000C45C31 /* ProfilePresenter.swift in Sources */,
 				3886EEAC25CCBDE600E3A54A /* SignInPresenter.swift in Sources */,
-				3886EF1325CE75AD00E3A54A /* HomeController.swift in Sources */,
 				3840645125D0687E007FBC3E /* TvShowDetails.swift in Sources */,
 				3886EE9925CCBD3B00E3A54A /* BaseController.swift in Sources */,
 				3886EEE825CE3DA100E3A54A /* TmdbService.swift in Sources */,
 				3886EEDD25CE3A2700E3A54A /* WebServiceConstants.swift in Sources */,
 				3886EED725CE39F900E3A54A /* ApiResponse.swift in Sources */,
+				38367F5425DCE0E100E3D4D6 /* TvShowsCell.swift in Sources */,
 				3840647125D0AE5F007FBC3E /* TvDetailsSection.swift in Sources */,
 				3840644925D065BB007FBC3E /* TvShowDetailsView.swift in Sources */,
 				3886EEE225CE3A9F00E3A54A /* Constants.swift in Sources */,
@@ -626,6 +649,7 @@
 				388F643025D1AE8E00C45C31 /* Delegates.swift in Sources */,
 				3886EF0A25CE56D800E3A54A /* Enums.swift in Sources */,
 				3886EE6225CCB85200E3A54A /* SceneDelegate.swift in Sources */,
+				38367F4825DCE02B00E3D4D6 /* HomeController.swift in Sources */,
 				3840645E25D0689F007FBC3E /* TvCastAndCrew.swift in Sources */,
 				3886EF2025CE75C800E3A54A /* HomeView.swift in Sources */,
 				3886EF5B25CF89E700E3A54A /* NetworkImages.swift in Sources */,
@@ -812,7 +836,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielrico.ApplaudoTMDBApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielrico.TMDBApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -832,7 +856,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielrico.ApplaudoTMDBApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielrico.TMDBApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
